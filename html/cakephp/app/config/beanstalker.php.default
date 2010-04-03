@@ -1,0 +1,5 @@
+<?
+	$config['Beanstalker']['domain']	= '';	// Your beanstalk subdomain
+	$config['Beanstalker']['login']		= '';	// Your beanstalk login
+	$config['Beanstalker']['password']	= '';	// Your beanstalk password
+?>
