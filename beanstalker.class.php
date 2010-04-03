@@ -1,24 +1,20 @@
 <?
 	class Beanstalker {
-		/* Params
-		 *	Useage:
-		 *
-		 *		$beanstalker = new Beanstalker(array(
-		 *			'domain'	=> 'your_beanstalk_account_subdomain',
-		 *			'login'		=> 'login',
-		 *			'password'	=> 'password'
-		 *		));
-		 *
-		 */
-		function Beanstalker($params){
-			if(!isset($params['format'])){
-				$params['format'] = 'array';
+		function Beanstalker($settings=null){
+			if(isset($settings)){
+				$this->config($settings);
+			}
+		}
+
+		function config($settings){
+			if(!isset($settings['format'])){
+				$settings['format'] = 'array';
 			}
 			
-			$this->domain	= $params['domain'];
-			$this->login	= $params['login'];
-			$this->password	= $params['password'];
-			$this->format	= $params['format'];
+			$this->domain	= $settings['domain'];
+			$this->login	= $settings['login'];
+			$this->password	= $settings['password'];
+			$this->format	= $settings['format'];
 
 			switch($this->format){
 				case 'array':
