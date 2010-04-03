@@ -1,9 +1,9 @@
 <?
 	class BEANSTALKER_CONFIG {
-		var $default = array(
+		static $default = array(
 			'domain'	=> '',  // Your beanstalk subdomain
 			'login'		=> '',	// Your beanstalk login
 			'password'	=> ''	// Your beanstalk password
-		)
+		);
 	}
 ?>
