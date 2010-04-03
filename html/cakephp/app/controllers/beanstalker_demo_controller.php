@@ -1,5 +1,5 @@
 <?php
-class BeanstalkController extends AppController {
+class BeanstalkerDemoController extends AppController {
 	var $uses = null;
 	var $components = array('Beanstalker.Beanstalker');
 
